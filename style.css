@@ -29,7 +29,8 @@ body {
 }
 
 .socials {
-	margin: 40px;
+	margin: 25px;
+	margin-left: 5%;
 }
 
 .socials a:hover {
