@@ -1,0 +1,149 @@
+@charset "utf-8";
+@font-face {
+	font-family: 'Nunito Sans';
+	src: url(fonts/NunitoSans.ttf);
+}
+
+html {
+	background-color: #111827;
+	color: white;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.header {
+	float: left;
+	margin: 25px;
+}
+
+.header h1 {
+	float: left;
+	margin-left: 3px;
+}
+
+.header img {
+	float: left;
+	margin-top: 15px;
+}
+
+nav {
+	margin-top: 0px;
+	float: right;
+}
+
+.header-nav {
+	float: right;
+	padding: 0px;
+	margin: 25px;
+}
+
+nav .navigation-bar-li {
+	float: left;
+	list-style-type: none;
+	margin-right: 25px;
+	margin-top: 0px;
+}
+
+nav .navigation-bar-li-login {
+	float: left;
+	list-style-type: none;
+	margin-right: 25px;
+	margin-top: 0px;
+	padding: 10px;
+}
+
+.div-1 {
+	height: 300px;
+	margin: 25px;
+	margin-top: 150px;
+	width: 100%;
+	position: left;
+}
+
+/* Hyperlink Rules */
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.navigation-bar-li {
+	padding: 10px;
+	border-radius: 15px;
+	transition: 0.3s;
+	background-color: #111827;
+}
+
+.navigation-bar-li:hover {
+	cursor: pointer;
+	background-color: #061D95;
+}
+
+.navigation-bar-li-login {
+	padding: 5px;
+	border-radius: 15px;
+	transition: 0.3s;
+	background-color: #09A1E8;
+}
+
+.navigation-bar-li-login:hover {
+	cursor: pointer;
+	background-color: #111827;
+}
+
+/* Dropdown menu properties */
+
+label img {
+	margin-left: 5px;
+	margin-bottom: 20%;
+	margin-top: 20%;
+	float: right;
+	filter: saturate(white);
+}
+
+nav .dropdown-nav {
+	width: 160px;
+}
+
+span {
+  cursor : pointer;
+  display: block;
+}
+
+.slide {
+  clear: both;
+  height: 0px;
+  overflow: hidden;
+  transition: height .4s ease;
+}
+
+.dropdown-li {
+	text-decoration: none;
+	width: 75%;
+	text-align: left;
+	padding: 5px;
+}
+
+.dropdown-li:hover {
+	background-color: #09A1E8;
+	border-radius: 15px;
+	transition: 0.3s;
+}
+
+#touch-cloud {
+	position: absolute; 
+	opacity: 0; 
+	height: 0px;
+}    
+
+#touch-cloud:checked + .slide {
+	height: 100px;
+} 
+
+#touch-mc {
+	position: absolute; 
+	opacity: 0; 
+	height: 0px;
+}    
+
+#touch-mc:checked + .slide {
+	height: 100px;
+} 
