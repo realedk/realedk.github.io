@@ -148,6 +148,7 @@ a {
 	transition: 0.3s;
 	padding: 15px;
 	background-color: #111827;
+	width: 100%;
   }
 
   .subLi:hover {
