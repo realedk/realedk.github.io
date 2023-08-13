@@ -12,7 +12,8 @@ html {
 
 .header {
 	float: left;
-	margin: 25px;
+	margin: 10px;
+	margin-left: 25px;
 }
 
 .header h1 {
@@ -40,22 +41,22 @@ nav .navigation-bar-li {
 	float: left;
 	list-style-type: none;
 	margin-right: 25px;
-	margin-top: 0px;
+	margin-top: 10px;
 }
 
 nav .navigation-bar-li-login {
 	float: left;
 	list-style-type: none;
 	margin-right: 25px;
-	margin-top: 0px;
+	margin-top: 10px;
 	padding: 10px;
 }
 
-.div-1 {
+.div-1 p {
 	height: 300px;
 	margin: 25px;
-	margin-top: 150px;
-	width: 100%;
+	margin-top: 200px;
+	width: 95%;
 	position: left;
 }
 
@@ -69,12 +70,12 @@ a {
 	padding: 10px;
 	border-radius: 15px;
 	transition: 0.3s;
-	background-color: #111827;
+	background-color: #061D95;
 }
 
 .navigation-bar-li:hover {
 	cursor: pointer;
-	background-color: #061D95;
+	background-color: #111827;
 }
 
 .navigation-bar-li-login {
@@ -90,60 +91,67 @@ a {
 }
 
 /* Dropdown menu properties */
-
-label img {
-	margin-left: 5px;
-	margin-bottom: 20%;
-	margin-top: 20%;
-	float: right;
-	filter: saturate(white);
-}
-
-nav .dropdown-nav {
-	width: 160px;
-}
-
-span {
-  cursor : pointer;
-  display: block;
-}
-
-.slide {
-  clear: both;
-  height: 0px;
-  overflow: hidden;
-  transition: height .4s ease;
-}
-
-.dropdown-li {
+  
+  ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+  }
+  
+  li {
+	display: block;
+	float: left;
+	padding: 10px;
+	position: relative;
 	text-decoration: none;
-	width: 75%;
-	text-align: left;
-	padding: 5px;
-}
-
-.dropdown-li:hover {
-	background-color: #09A1E8;
+  }
+  
+  li:hover,
+  li:focus-within {
+	cursor: pointer;
+  }
+  
+  li:focus-within a {
+	outline: none;
+  }
+  
+  ul li ul {
+	background-color: #061D95;
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	transition: 0.5s;
+	left: 0;
+	display: none;
 	border-radius: 15px;
+  }
+  
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+	 visibility: visible;
+	 opacity: 1;
+	 display: block;
+  }
+  
+  ul li ul li {
+	clear: both;
+	width: 100%;
+  }
+  
+  ul .dropdown {
+	margin-top: 10px;
+  }
+  
+  .subLi {
 	transition: 0.3s;
-}
+	padding: 15px;
+	background-color: #111827;
+  }
 
-#touch-cloud {
-	position: absolute; 
-	opacity: 0; 
-	height: 0px;
-}    
-
-#touch-cloud:checked + .slide {
-	height: 100px;
-} 
-
-#touch-mc {
-	position: absolute; 
-	opacity: 0; 
-	height: 0px;
-}    
-
-#touch-mc:checked + .slide {
-	height: 100px;
-} 
+  .subLi:hover {
+	background-color: #09A1E8;
+	border-radius: 5%;
+  }
+  
