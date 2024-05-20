@@ -1,0 +1,52 @@
+@font-face {
+  font-family: headers;
+  src: url(../fonts/TitanOne-Regular.ttf);
+}
+
+@font-face {
+	font-family: fallguys;
+	src: url(../fonts/NotoSans-Regular_1.ttf);
+}
+
+body {
+	font-family: fallguys;
+}
+
+.header {
+	height: 200px;
+	font-family: headers;
+}
+
+.header img {
+	float: left;
+	padding: 8px;
+}
+
+.header h1 {
+	float: left;
+	padding: 8px;
+	padding-top: 10px;
+} 
+
+.menu {
+	padding-top: 18px;
+	float: right;
+	padding-right: 20px;
+}
+
+.menu li {
+	list-style-type: none;
+	float: left;
+	padding: 10px;
+}
+
+.dropdown li {
+/*	padding-right: 5px;*/
+}
+
+.dropdown img {
+	float: right;
+	padding: 0px;
+	padding-left: 5px;
+	padding-top: 4px;
+}

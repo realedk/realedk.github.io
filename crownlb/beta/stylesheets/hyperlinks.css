@@ -1,0 +1,21 @@
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.login_button {
+	background: #7289DA;
+	border-radius: 25px;
+	padding: 20px;
+	transition: .3s;
+	cursor: pointer;
+}
+
+.login_button a {
+	outline: none;
+	text-transform: uppercase;
+}
+
+.login_button:hover {
+	background: white;
+}
