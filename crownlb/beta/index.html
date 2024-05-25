@@ -7,17 +7,40 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/hyperlinks.css">
     <title>Fall Guys Leaderboard Official</title>
 </head>
-<body>
+<body class="dark-mode">
  <div class="header">
-     <img src="images/logo.png" width="100px">
+     <img src="images/logo.png" width="100px" alt="Fall Guys Logo">
      <h1>Fall Guys Leaderboard</h1>
      <ul class="menu">
          <li class="selected">Home</li>
          <li>Leaderboards</li>
-         <li class="dropdown">Dropdown<img src="images/dropdown_arrow.png" width="10px"></li>
+         <li class="dropdown">Dropdown<!-- <img src="images/dropdown_arrow.png" width="10px" alt="Dropdown Arrow"> --></li>
          <li class="discord_link"><a href="https://discord.gg/crownleaderboard">Discord Server</a></li>
-         <li class="login_button"><a href="#">Login with Discord</a></li>
+         <li class="login_button"><a href="#">Login</a></li>
+         <li class="mode-toggle">
+             <img src="images/sun.png" class="sun" width="30px" alt="Light Mode">
+             <label class="switch">
+                 <input type="checkbox" id="modeSwitch">
+                 <span class="slider round"></span>
+             </label>
+             <img src="images/moon.png" class="moon" width="30px" alt="Dark Mode">
+         </li>
      </ul>
  </div>
+ <div class="content">
+     <div class="section">
+         <h2>Welcome to Fall Guys Leaderboard!</h2>
+         <p>Fall Guys is a massively multiplayer party game with up to 60 players online in a free-for-all struggle through round after round of escalating chaos until one victor remains!</p>
+     </div>
+     <div class="section">
+         <h2>Join the Fun!</h2>
+         <p>Compete with players around the world and climb the leaderboard to become the ultimate Fall Guys champion. Our leaderboard updates in real-time, so stay tuned!</p>
+     </div>
+     <div class="section">
+         <h2>Discord Community</h2>
+         <p>Join our Discord community to connect with other players, participate in events, and share your best moments!</p>
+     </div>
+ </div>
+ <script src="scripts/animations.js"></script>
 </body>
 </html>
