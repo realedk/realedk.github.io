@@ -24,7 +24,7 @@ body.light-mode {
 .header {
   height: 200px;
   font-family: headers;
-  background-color: rgba(255, 182, 193, 0.9);
+  background-color: rgba(153, 204, 255, 0.9);
   padding: 0 20px;
   display: flex;
   align-items: center;
@@ -52,6 +52,8 @@ body.light-mode {
   position: relative;
   transition: transform 0.3s;
   cursor: pointer;
+  text-align: center;
+  font-size: 15px;
 }
 
 .menu li:hover {
@@ -85,65 +87,23 @@ body.light-mode {
   line-height: 1.6;
 }
 
-.mode-toggle {
-  display: flex;
-  align-items: center;
+.section_red_alert {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: rgba(255, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.mode-toggle .sun, .mode-toggle .moon {
-  display: none;
+.section_red_alert h2 {
+  font-family: headers;
+  margin-top: 0;
 }
 
-body.light-mode .mode-toggle .sun {
-  display: inline;
+.footer {
+  width: 100%;
 }
 
-body.dark-mode .mode-toggle .moon {
-  display: inline;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 34px;
-  height: 20px;
-  margin: 0 10px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: .4s;
-  border-radius: 20px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 14px;
-  width: 14px;
-  left: 3px;
-  bottom: 3px;
-  background-color: white;
-  transition: .4s;
-  border-radius: 50%;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:checked + .slider:before {
-  transform: translateX(14px);
+.footer p {
+  text-align: center;
 }
