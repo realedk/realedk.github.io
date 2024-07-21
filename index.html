@@ -16,10 +16,25 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Welcome.</title>
+	<title>TheRealEDK</title>
 </head>
 <body>
-  This website is in active development.
-  <div style="display: none;"><a rel="me" href="https://mas.to/@edk">Mastodon</a></div>
+  <div class="container">
+    <div class="social-icons">
+        <a href="https://youtube.com/@TheRealEDK" class="social-icon" id="youtube"><img src="youtube-icon.svg" alt="YouTube"></a>
+        <a href="#" class="social-icon" id="discord"><img src="discord-icon.svg" alt="Discord"></a>
+        <a href="https://x.com/@RealEphraimK" class="social-icon" id="twitter"><img src="twitter-icon.svg" alt="Twitter"></a>
+        <a href="https://github.com/ephraimkreighbaum" class="social-icon" id="github"><img src="github-icon.svg" alt="GitHub"></a>
+    </div>
+</div>
+
+<div class="discord-popup" id="discordPopup">
+    <div class="discord-popup-content">
+        <p>@ephraimk on Discord!</p>
+        <span class="close-popup" onclick="closePopup()">&times;</span>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
