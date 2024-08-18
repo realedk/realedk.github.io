@@ -1,0 +1,33 @@
+@charset "utf-8";
+@font-face {
+    font-family: PageFont;
+    src: url('lucida.TTF');
+    font-family: bold;
+}
+
+html {
+    background-color: white;
+    font: PageFont;
+    font-size: x-large;
+}
+
+.button {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    width: 10%;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+.button:hover > a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
