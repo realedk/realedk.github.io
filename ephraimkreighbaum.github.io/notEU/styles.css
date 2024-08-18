@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-button {
+    display: block;
+    width: 200px;
+    height: 60px;
+    margin: 20px auto;
+    font-size: 24px;
+    background-color: white; /* Button color */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.menu-button:hover a {
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: x-large;
+    font-family: helvetica;
+}
+
