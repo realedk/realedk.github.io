@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+#stars, #stars2, #stars3 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+}
+
+#stars {
+    background: url('https://www.script-tutorials.com/demos/360/images/stars.png') repeat top center;
+    animation: animStar 50s linear infinite;
+}
+
+#stars2 {
+    background: url('https://www.script-tutorials.com/demos/360/images/stars.png') repeat top center;
+    animation: animStar 100s linear infinite;
+}
+
+#stars3 {
+    background: url('https://www.script-tutorials.com/demos/360/images/stars.png') repeat top center;
+    animation: animStar 150s linear infinite;
+}
+
+@keyframes animStar {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+.role, .addon {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    transition: background-color 0.3s;
+}
+
+.role:hover, .addon:hover {
+    background-color: #444;
+}
+
+.info {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #222;
+}
+
+.close-btn {
+    cursor: pointer;
+    color: red;
+    float: right;
+}
+
+a {
+    color: aquamarine;
+}
+
+a:hover {
+    color: aqua;
+}
+
+a:active {
+    color: aquamarine;
+}

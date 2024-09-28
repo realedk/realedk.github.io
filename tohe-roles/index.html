@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Town of Host Enhanced Roles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div class="content">
+    <h1>Town of Host Enhanced Roles</h1>
+    <center><p>Credit to <a href="https://github.com/TheOtherRolesAU/TheOtherRoles/blob/main/README.md">TheOtherRoles</a> for the list. Information taken from their readme.</p></center>
+
+    <h2><span style="color: #00FFFF;">Crewmate</span> Roles</h2>
+    <div class="role" onclick="toggleInfo('engineer')">Engineer</div>
+    <div id="engineer" class="info">
+        <span class="close-btn" onclick="toggleInfo('engineer')">Close</span>
+        <p>Engineer can use vents.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('sheriff')">Sheriff</div>
+    <div id="sheriff" class="info">
+        <span class="close-btn" onclick="toggleInfo('sheriff')">Close</span>
+        <p>Sheriff can kill impostors but dies if they kill a crewmate.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('mayor')">Mayor</div>
+    <div id="mayor" class="info">
+        <span class="close-btn" onclick="toggleInfo('mayor')">Close</span>
+        <p>Mayor can cast multiple votes.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('detective')">Detective</div>
+    <div id="detective" class="info">
+        <span class="close-btn" onclick="toggleInfo('detective')">Close</span>
+        <p>Detective can see footprints.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('timeMaster')">Time Master</div>
+    <div id="timeMaster" class="info">
+        <span class="close-btn" onclick="toggleInfo('timeMaster')">Close</span>
+        <p>Time Master can rewind time.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('medic')">Medic</div>
+    <div id="medic" class="info">
+        <span class="close-btn" onclick="toggleInfo('medic')">Close</span>
+        <p>Medic can shield a player.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('tracker')">Tracker</div>
+    <div id="tracker" class="info">
+        <span class="close-btn" onclick="toggleInfo('tracker')">Close</span>
+        <p>Tracker can see the last location of players.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('snitch')">Snitch</div>
+    <div id="snitch" class="info">
+        <span class="close-btn" onclick="toggleInfo('snitch')">Close</span>
+        <p>Snitch knows who the impostors are when tasks are almost done.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('medium')">Medium</div>
+    <div id="medium" class="info">
+        <span class="close-btn" onclick="toggleInfo('medium')">Close</span>
+        <p>Medium can talk to dead players.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('securityGuard')">Security Guard</div>
+    <div id="securityGuard" class="info">
+        <span class="close-btn" onclick="toggleInfo('securityGuard')">Close</span>
+        <p>Security Guard can place cameras.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('trapper')">Trapper</div>
+    <div id="trapper" class="info">
+        <span class="close-btn" onclick="toggleInfo('trapper')">Close</span>
+        <p>Trapper can place traps.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('niceGuesser')">Nice Guesser</div>
+    <div id="niceGuesser" class="info">
+        <span class="close-btn" onclick="toggleInfo('niceGuesser')">Close</span>
+        <p>Nice Guesser can guess roles correctly to eliminate impostors.</p>
+    </div>
+
+    <h2><span style="color: #FF0000;">Imposter</span> Roles</h2>
+    <div class="role" onclick="toggleInfo('godfather')">Godfather</div>
+    <div id="godfather" class="info">
+        <span class="close-btn" onclick="toggleInfo('godfather')">Close</span>
+        <p>Godfather appears as a crewmate to the Sheriff.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('janitor')">Janitor</div>
+    <div id="janitor" class="info">
+        <span class="close-btn" onclick="toggleInfo('janitor')">Close</span>
+        <p>Janitor can clean up bodies.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('mafioso')">Mafioso</div>
+    <div id="mafioso" class="info">
+        <span class="close-btn" onclick="toggleInfo('mafioso')">Close</span>
+        <p>Mafioso becomes the Godfather if the Godfather dies.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('morphling')">Morphling</div>
+    <div id="morphling" class="info">
+        <span class="close-btn" onclick="toggleInfo('morphling')">Close</span>
+        <p>Morphling can morph into other players.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('camouflager')">Camouflager</div>
+    <div id="camouflager" class="info">
+        <span class="close-btn" onclick="toggleInfo('camouflager')">Close</span>
+        <p>Camouflager can make everyone appear the same.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('vampire')">Vampire</div>
+    <div id="vampire" class="info">
+        <span class="close-btn" onclick="toggleInfo('vampire')">Close</span>
+        <p>Vampire can bite players to kill them after a delay.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('lawyer')">Lawyer</div>
+    <div id="lawyer" class="info">
+        <span class="close-btn" onclick="toggleInfo('lawyer')">Close</span>
+        <p>Lawyer wins if their client (an impostor) wins.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('cleaner')">Cleaner</div>
+    <div id="cleaner" class="info">
+        <span class="close-btn" onclick="toggleInfo('cleaner')">Close</span>
+        <p>Cleaner can clean up bodies.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('warlock')">Warlock</div>
+    <div id="warlock" class="info">
+        <span class="close-btn" onclick="toggleInfo('warlock')">Close</span>
+        <p>Warlock can curse players to kill others.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('bountyHunter')">Bounty Hunter</div>
+    <div id="bountyHunter" class="info">
+        <span class="close-btn" onclick="toggleInfo('bountyHunter')">Close</span>
+        <p>Bounty Hunter gets a target to kill for a reward.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('hacker')">Hacker</div>
+    <div id="hacker" class="info">
+        <span class="close-btn" onclick="toggleInfo('hacker')">Close</span>
+        <p>Hacker can see the admin map and vitals.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('shifter')">Shifter</div>
+    <div id="shifter" class="info">
+        <span class="close-btn" onclick="toggleInfo('shifter')">Close</span>
+        <p>Shifter can swap roles with another player.</p>
+    </div>
+    <div class="role" onclick="toggleInfo('witch')">Witch</div>
+    <div id="witch" class="info">
+        <span class="close-btn" onclick="toggleInfo('witch')">Close</span>
+        <p>Witch can curse players to kill them after a delay.</p>
+    </div>
+        <div class="role" onclick="toggleInfo('ninja')">Ninja</div>
+        <div id="ninja" class="info">
+            <span class="close-btn" onclick="toggleInfo('ninja')">Close</span>
+            <p>Ninja can kill silently and has a cooldown reduction.</p>
+        </div>
+    
+        <h2><span style="color: #5c575d;">Neutral</span> Roles</h2>
+        <div class="role" onclick="toggleInfo('jester')">Jester</div>
+        <div id="jester" class="info">
+            <span class="close-btn" onclick="toggleInfo('jester')">Close</span>
+            <p>Jester wins if they get voted out.</p>
+        </div>
+        <div class="role" onclick="toggleInfo('executioner')">Executioner</div>
+        <div id="executioner" class="info">
+            <span class="close-btn" onclick="toggleInfo('executioner')">Close</span>
+            <p>Executioner wins if their target is voted out.</p>
+        </div>
+        <div class="role" onclick="toggleInfo('arsonist')">Arsonist</div>
+        <div id="arsonist" class="info">
+            <span class="close-btn" onclick="toggleInfo('arsonist')">Close</span>
+            <p>Arsonist wins by dousing and igniting all players.</p>
+        </div>
+        <div class="role" onclick="toggleInfo('jackal')">Jackal</div>
+        <div id="jackal" class="info">
+            <span class="close-btn" onclick="toggleInfo('jackal')">Close</span>
+            <p>Jackal can kill and has a sidekick.</p>
+        </div>
+        <div class="role" onclick="toggleInfo('sidekick')">Sidekick</div>
+        <div id="sidekick" class="info">
+            <span class="close-btn" onclick="toggleInfo('sidekick')">Close</span>
+            <p>Sidekick assists the Jackal and becomes Jackal if the original dies.</p>
+        </div>
+        <div class="role" onclick="toggleInfo('vulture')">Vulture</div>
+        <div id="vulture" class="info">
+            <span class="close-btn" onclick="toggleInfo('vulture')">Close</span>
+            <p>Vulture wins by eating a certain number of corpses.</p>
+        </div>
+        <div class="role" onclick="toggleInfo('pestilence')">Pestilence</div>
+        <div id="pestilence" class="info">
+            <span class="close-btn" onclick="toggleInfo('pestilence')">Close</span>
+            <p>Pestilence is immune to all attacks and wins by being the last one standing.</p>
+        </div>
+        <div class="role" onclick="toggleInfo('plaguebearer')">Plaguebearer</div>
+        <div id="plaguebearer" class="info">
+            <span class="close-btn" onclick="toggleInfo('plaguebearer')">Close</span>
+            <p>Plaguebearer infects players and becomes Pestilence when all are infected.</p>
+        </div>
+        <div class="role" onclick="toggleInfo('amnesiac')">Amnesiac</div>
+        <div id="amnesiac" class="info">
+            <span class="close-btn" onclick="toggleInfo('amnesiac')">Close</span>
+            <p>Amnesiac can take on the role of a dead player.</p>
+        </div>
+        <div class="role" onclick="toggleInfo('survivor')">Survivor</div>
+        <div id="survivor" class="info">
+            <span class="close-btn" onclick="toggleInfo('survivor')">Close</span>
+            <p>Survivor wins by surviving until the end.</p>
+        </div>
+        <div class="role" onclick="toggleInfo('phantom')">Phantom</div>
+        <div id="phantom" class="info">
+            <span class="close-btn" onclick="toggleInfo('phantom')">Close</span>
+            <p>Phantom wins by completing tasks as a ghost without being caught.</p>
+        </div>
+        <div class="role" onclick="toggleInfo('glitch')">Glitch</div>
+        <div id="glitch" class="info">
+            <span class="close-btn" onclick="toggleInfo('glitch')">Close</span>
+            <p>Glitch can hack players and wins by being the last one standing.</p>
+        </div>
+    
+        <script src="script.js"></script>
+    </div>
+    </body>
+    </html>
+    
