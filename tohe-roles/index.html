@@ -18,7 +18,7 @@
     <div class="role" onclick="toggleInfo('engineer')">Engineer</div>
     <div id="engineer" class="info">
         <span class="close-btn" onclick="toggleInfo('engineer')">Close</span>
-        <p>Engineer can use vents.</p>
+        <p>Engineer can use vents. Host configures time allowed in vents and vent use cooldown.</p>
     </div>
     <div class="role" onclick="toggleInfo('sheriff')">Sheriff</div>
     <div id="sheriff" class="info">
@@ -53,7 +53,7 @@
     <div class="role" onclick="toggleInfo('snitch')">Snitch</div>
     <div id="snitch" class="info">
         <span class="close-btn" onclick="toggleInfo('snitch')">Close</span>
-        <p>Snitch knows who the impostors are when tasks are almost done.</p>
+        <p>Snitch knows who the impostors are when tasks are completed done.</p>
     </div>
     <div class="role" onclick="toggleInfo('medium')">Medium</div>
     <div id="medium" class="info">
@@ -92,10 +92,10 @@
         <span class="close-btn" onclick="toggleInfo('mafioso')">Close</span>
         <p>Mafioso becomes the Godfather if the Godfather dies.</p>
     </div>
-    <div class="role" onclick="toggleInfo('morphling')">Morphling</div>
+    <div class="role" onclick="toggleInfo('morphling')">Morphling/Shapeshifter</div>
     <div id="morphling" class="info">
         <span class="close-btn" onclick="toggleInfo('morphling')">Close</span>
-        <p>Morphling can morph into other players.</p>
+        <p>Morphling/Shapeshifter can morph into other players.</p>
     </div>
     <div class="role" onclick="toggleInfo('camouflager')">Camouflager</div>
     <div id="camouflager" class="info">
@@ -110,7 +110,7 @@
     <div class="role" onclick="toggleInfo('lawyer')">Lawyer</div>
     <div id="lawyer" class="info">
         <span class="close-btn" onclick="toggleInfo('lawyer')">Close</span>
-        <p>Lawyer wins if their client (an impostor) wins.</p>
+        <p>Lawyer wins if their client (an impostor) wins. If configured, Lawyer can turn into a Jester or other configured neutral role if client is eliminated.</p>
     </div>
     <div class="role" onclick="toggleInfo('cleaner')">Cleaner</div>
     <div id="cleaner" class="info">
