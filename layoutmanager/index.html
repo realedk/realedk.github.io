@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
     <header>
       <span class="lm" aria-hidden="true">L<span>M</span></span>
       <h1>Layout Manager</h1>
-      <span class="version">1.7.1</span>
+      <div class="header-controls"><span class="version">1.7.1</span><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><span id="theme-label">Light mode</span></button></div>
     </header>
     <p class="description">Create and edit frac missile and HP line layouts. Add spools, blocks, valves, ports, and stands. Set lengths, move and join components, and export the layout as an image.</p>
     <section class="downloads" aria-label="Downloads">
@@ -29,10 +29,10 @@
       </div>
     </section>
     <figure>
-      <a href="assets/layout-manager-app.jpg" aria-label="Open full-size screenshot of Layout Manager">
-        <img src="assets/layout-manager-app.jpg" width="3020" height="1714" alt="Layout Manager on macOS in dark mode, showing the Quad template with Side A and Side B, spools, blocks, valves, and ports.">
+      <a class="screenshot-link" href="assets/layout-manager-dark.png" aria-label="Open full-size screenshot of Layout Manager">
+        <img src="assets/layout-manager-dark.png" id="app-screenshot" width="2764" height="1688" alt="Layout Manager on macOS in dark mode, showing the Quad template with Side A and Side B, spools, blocks, valves, and ports.">
       </a>
-      <figcaption>Layout Manager for Mac · Quad template <a href="assets/layout-manager-app.jpg">View full size ↗</a></figcaption>
+      <figcaption>Layout Manager for Mac · Quad template <a class="screenshot-link" href="assets/layout-manager-dark.png">View full size ↗</a></figcaption>
     </figure>
     <details>
       <summary>Installation</summary>
