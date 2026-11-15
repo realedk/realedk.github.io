@@ -13,10 +13,11 @@ html {
 
 .button {
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 25px;
     background-color: white;
     width: 10%;
     transition: 0.3s;
+    margin: 15px;
 }
 
 .button:hover {
