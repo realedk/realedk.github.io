@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Layout Manager — build, arrange, and export your HP line layouts on Mac, iPhone, and iPad.">
+  <meta name="theme-color" content="#d11f26">
+  <title>Download Layout Manager</title>
+  <link rel="icon" href="assets/icon-light.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="Layout Manager home"><span class="lm" aria-hidden="true">L<span>M</span></span><span class="brand-name">Layout Manager</span></a>
+    <nav aria-label="Main navigation"><a href="#downloads">Downloads</a><button class="text-button" data-guide>Installation help <span aria-hidden="true">↗</span></button><button class="theme-button" id="theme" aria-label="Switch to dark appearance" title="Change appearance"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.5 13.1A8.6 8.6 0 0 1 10.9 3.5a8.6 8.6 0 1 0 9.6 9.6Z"/></svg></button></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> LAYOUT MANAGER <span class="version">1.7.1</span></div>
+        <h1 id="hero-title">A place for<br>every <em>piece.</em></h1>
+        <p class="intro">Your HP line, laid out your way. Build, arrange, and export detailed layouts from your Mac, iPhone, or iPad.</p>
+        <a class="button primary" href="#downloads">Get Layout Manager <span aria-hidden="true">↓</span></a>
+        <div class="hero-note">Zipper. Simultaneous. Quad. Or start from scratch.</div>
+      </div>
+      <div class="preview-area">
+        <div class="app-window" aria-label="Illustrated preview of the Layout Manager canvas">
+          <div class="window-title"><span class="traffic" aria-hidden="true"><i></i><i></i><i></i></span><span>Layout Manager</span><span class="window-dots" aria-hidden="true">···</span></div>
+          <div class="app-toolbar"><span class="lm small" aria-hidden="true">L<span>M</span></span><span class="project-title">Quad</span><span class="tool-pill">Layout Settings <b>⌄</b></span><span class="tool-pill add-pill">＋ Add Component <b>⌄</b></span></div>
+          <div class="preview-canvas">
+            <div class="canvas-caption"><strong>Quad</strong><span>Every connection in view.</span></div>
+            <svg class="diagram" viewBox="0 0 660 330" role="img" aria-label="Example HP lines with black spools, red blocks, check valves, and green valves">
+              <defs>
+                <linearGradient id="spool" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1b1b1c"/><stop offset=".45" stop-color="#525254"/><stop offset=".6" stop-color="#222224"/><stop offset="1" stop-color="#080809"/></linearGradient>
+                <g id="pipe"><rect x="0" y="0" width="98" height="21" rx="10" fill="url(#spool)"/><path d="M6-5v31M92-5v31" stroke="#67676a" stroke-width="4"/><rect x="35" y="3" width="28" height="15" rx="3" fill="#f4f4f4"/><text x="49" y="14" text-anchor="middle" fill="#242426" font-size="10" font-weight="650">8 ft</text></g>
+                <g id="block"><rect width="32" height="37" x="0" y="-8" rx="4" fill="#d11f26" stroke="#a7161c" stroke-width="1.5"/><path d="M10-8v-8h12v8" fill="#a7161c"/><text x="16" y="14" text-anchor="middle" fill="white" font-size="10" font-weight="600">1 ft</text></g>
+                <g id="block-bottom"><rect width="32" height="37" x="0" y="-8" rx="4" fill="#d11f26" stroke="#a7161c" stroke-width="1.5"/><path d="M10 29v8h12v-8" fill="#a7161c"/><text x="16" y="14" text-anchor="middle" fill="white" font-size="10" font-weight="600">1 ft</text></g>
+                <g id="check"><rect width="80" height="37" y="-8" rx="4" fill="#686e77"/><path d="M53 3H25l7-5M25 3l7 5" fill="none" stroke="white" stroke-width="1.8"/><text x="40" y="22" text-anchor="middle" fill="white" font-size="10">8 ft</text></g>
+                <g id="valve"><rect width="42" height="37" y="-8" rx="4" fill="#37845b"/><path d="m10 0 22 20V0L10 20Z" fill="none" stroke="white" stroke-width="1.2"/></g>
+              </defs>
+              <g font-family="-apple-system,BlinkMacSystemFont,Arial,sans-serif">
+                <g transform="translate(24 66)"><text y="-30" class="side-label">SIDE A</text><path d="M0 10H603" class="connector"/><rect y="-3" width="39" height="27" rx="6" fill="#b09a71"/><text x="19" y="14" text-anchor="middle" font-size="10" fill="white">3 ft</text><use href="#check" x="46"/><use href="#pipe" x="136"/><use href="#block" x="244"/><use href="#pipe" x="286"/><use href="#block" x="394"/><use href="#pipe" x="436"/><use href="#valve" x="548"/><path d="M590 10h13v52h-40" class="connector"/><use href="#pipe" x="456" y="52"/><use href="#block" x="414" y="52"/><use href="#pipe" x="306" y="52"/><path d="M420 81v11h20V81M250 29v23h44" class="connector"/></g>
+                <g transform="translate(24 242)"><text y="-30" class="side-label">SIDE B</text><path d="M0 10H603" class="connector"/><rect y="-3" width="39" height="27" rx="6" fill="#b09a71"/><text x="19" y="14" text-anchor="middle" font-size="10" fill="white">3 ft</text><use href="#check" x="46"/><use href="#pipe" x="136"/><use href="#block-bottom" x="244"/><use href="#pipe" x="286"/><use href="#block-bottom" x="394"/><use href="#pipe" x="436"/><use href="#valve" x="548"/><path d="M590 10h13v-52h-40" class="connector"/><use href="#pipe" x="456" y="-52"/><use href="#block-bottom" x="414" y="-52"/><use href="#pipe" x="306" y="-52"/><path d="M420-60v-11h20v11M250-8v-23h44" class="connector"/></g>
+              </g>
+            </svg>
+            <div class="canvas-bottom"><span class="canvas-tools" aria-hidden="true">↖ <span>✋</span></span><span class="zoom" aria-hidden="true">− <i></i> ＋ <small>100%</small></span></div>
+          </div>
+          <div class="window-status"><span><i></i> Made to move with your layout</span><span>Illustrated preview</span></div>
+        </div>
+        <div class="floating-note"><span class="note-icon" aria-hidden="true">↗</span><span>From the canvas<br><strong>to the field.</strong></span></div>
+      </div>
+    </section>
+    <section class="downloads wrap" id="downloads" aria-labelledby="downloads-title">
+      <div class="section-heading"><div><span class="eyebrow">YOUR WORKSPACE, ANYWHERE</span><h2 id="downloads-title">Choose your screen.</h2></div><span class="release-label">Version 1.7.1</span></div>
+      <div class="download-grid">
+        <article class="download-card">
+          <div class="platform-heading"><div class="platform-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="5" y="6" width="30" height="21" rx="3"/><path d="M16 27v6m8-6v6M11 34h18M6 22h28"/></svg></div><div><h3>For Mac</h3><p>The full desktop workspace.</p></div><span class="availability">Available</span></div>
+          <p class="card-description">Build your layout with precise controls, keyboard shortcuts, and room to see the whole line.</p>
+          <a class="button primary download-link" id="mac-download" href="downloads/Layout-Manager-macOS.zip" download>Download for Mac <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg></a>
+          <div class="file-meta" id="mac-meta">macOS 13+ · Apple silicon <span>·</span> .app in a ZIP archive</div>
+        </article>
+        <article class="download-card">
+          <div class="platform-heading"><div class="platform-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="13" y="4" width="23" height="30" rx="4"/><rect x="4" y="15" width="14" height="22" rx="3" class="phone-fill"/><path d="M9 33h4m9-3h5"/></svg></div><div><h3>For iPhone & iPad</h3><p>Your layout, right at hand.</p></div><span class="availability pending" id="ios-status">Coming soon</span></div>
+          <p class="card-description">A touch-friendly canvas with familiar tools, plus keyboard and trackpad controls on iPad.</p>
+          <button class="button unavailable" id="ios-download" disabled>IPA download not available <span aria-hidden="true">↓</span></button>
+          <div class="file-meta" id="ios-meta">iOS / iPadOS 18+ <span>·</span> Signed build pending</div>
+        </article>
+      </div>
+      <div class="download-help"><span><span aria-hidden="true">ⓘ</span> New here? Get set up in a few steps.</span><button class="text-button" data-guide>Installation guide <span aria-hidden="true">↗</span></button></div>
+    </section>
+    <section class="details wrap" aria-label="Layout Manager capabilities"><div><span class="detail-number">01</span><h3>Start with a template.</h3><p>Choose Zipper, Simultaneous, or Quad. Build your own with a blank canvas.</p></div><div><span class="detail-number">02</span><h3>Make it your own.</h3><p>Arrange components, connect your line, add ports, and place stands.</p></div><div><span class="detail-number">03</span><h3>Take the plan with you.</h3><p>Save editable projects across devices or export your layout as an image.</p></div></section>
+  </main>
+  <footer class="wrap"><a class="brand footer-brand" href="./"><span class="lm small" aria-hidden="true">L<span>M</span></span><span>Layout Manager</span></a><p>Created by Ephraim Kreighbaum</p><button class="text-button" data-guide>Need a hand? <span aria-hidden="true">↗</span></button></footer>
+  <dialog id="install-dialog" aria-labelledby="install-title"><div class="dialog-top"><span class="lm small" aria-hidden="true">L<span>M</span></span><button class="close-button" aria-label="Close installation guide">×</button></div><span class="eyebrow">GETTING STARTED</span><h2 id="install-title">Make yourself at home.</h2><div class="guide-tabs" role="tablist" aria-label="Installation platform"><button role="tab" id="mac-tab" aria-controls="mac-guide" aria-selected="true">Mac</button><button role="tab" id="ios-tab" aria-controls="ios-guide" aria-selected="false" tabindex="-1">iPhone & iPad</button></div><div id="mac-guide" role="tabpanel" aria-labelledby="mac-tab"><ol><li>Download and open the ZIP archive.</li><li>Drag <strong>Layout Manager.app</strong> into your Applications folder.</li><li>Open Layout Manager and create a template or blank project.</li></ol><p class="guide-note">This build is not notarized. macOS may ask you to approve it in System Settings → Privacy & Security. Only approve a download you trust.</p></div><div id="ios-guide" role="tabpanel" aria-labelledby="ios-tab" hidden><p>A signed IPA has not been added to this release yet.</p><p>Once available, install it using the distribution method supplied with that build. Downloading an IPA in Safari alone does not install it.</p><p class="guide-note">The Mac, iPhone, and iPad apps use compatible .layout.json project files. Transfer projects through Files, AirDrop, or iCloud Drive.</p></div><button class="button primary dialog-done">Done</button></dialog>
+</body>
+</html>
